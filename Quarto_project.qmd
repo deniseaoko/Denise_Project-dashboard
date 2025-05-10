@@ -125,8 +125,8 @@ fig5 = px.choropleth(merged_iso,
        hover_name='country',
        title='World Map of GDP per Capita_2022',
     color_discrete_map= {'Low': '#90be6d', 'Lower-Middle': '#f9c74f', 'Upper-Middle':'#f3722c', 'High': '#f94144'}
-).update_layout(showlegend=False,margin=dict(l=50, r=100, t=100, b=50),width=900,height=600     
-)
+).update_layout(showlegend=False,margin=dict(l=50, r=100, t=100, b=50),width=1000,height=800     
+).update_geos(fitbounds="locations")
 
   
 fig11 = px.box(
